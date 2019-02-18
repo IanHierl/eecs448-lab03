@@ -10,3 +10,11 @@ var validate = function() {
   }
   return false;
 }
+
+var validateBttn = document.getElementById("validate");
+
+if( validateBttn.addEventListener ) {
+  validateBttn.addEventListener( "click", validate, false );
+}
+
+document.getElementById("validate").addEventListener
