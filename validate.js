@@ -15,6 +15,6 @@ var validateBttn = document.getElementById("validate");
 
 if( validateBttn.addEventListener ) {
   validateBttn.addEventListener( "click", validate, false );
+} else if( validateBttn.attachEvent ) {
+  validateBttn.attachEvent( "onclick", validate );
 }
-
-document.getElementById("validate").addEventListener
