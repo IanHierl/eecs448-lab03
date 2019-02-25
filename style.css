@@ -6,6 +6,8 @@
 html {
   height: 100%;
   background-image: linear-gradient(to bottom, slateblue, lightblue);
+  background-size: 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -17,12 +19,14 @@ header {
   border-radius: 5em 5em 0 0;
   background-image: linear-gradient(to bottom, lightblue, rgba(255, 255, 255, 0.5));
   background-repeat: no-repeat;
+  background-size: 100%;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
   padding: 0;
+  font-size: 16pt;
 }
 
 nav {
@@ -50,6 +54,10 @@ nav ul li {
 a {
   color: slateblue;
   text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 main {
