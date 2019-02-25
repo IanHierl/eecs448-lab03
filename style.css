@@ -11,13 +11,22 @@ html {
   background-repeat: no-repeat;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   width: 700px;
-  margin: auto;
-  padding: 0;
+  height: 5em;
+  margin: 0 auto;
+  top: 0;
+  padding: 1em;
   color: black;
-  border-radius: 5em 5em 0 0;
-  background-image: linear-gradient(to bottom, lightblue, rgba(255, 255, 255, 0.5));
+  border-style: solid;
+  border-width: 0 0.5em 0.5em 0.5em;
+  border-radius: 0 0 5em 5em;
+  background-image: linear-gradient(to top, lightblue, rgba(255, 255, 255, 0));
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
@@ -116,4 +125,8 @@ p#target {
   border: 2px solid rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   padding: 0.5em;
+}
+
+div#slideSources {
+  clear: both;
 }

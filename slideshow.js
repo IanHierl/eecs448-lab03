@@ -2,7 +2,9 @@ var curImg = document.getElementById("img");
 var curInd = 0; 
 
 var slideLeft = function() {
-  curInd = ( curInd - 1 ) % 5;
+  // JavaScript's % operator returns a negative result if the left operand is negative
+  // Adding 5, the base of the modulo operator, prevents the left oeprand from being negative
+  curInd = ( curInd - 1 + 5 ) % 5;
   curImg.src = "./images/slide" + curInd + ".png";
 }
 
