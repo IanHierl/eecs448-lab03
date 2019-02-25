@@ -8,13 +8,24 @@
             src="cssmanip.js"
             defer>
     </script>
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css">
   </head>
 
   <body>
     <header>
+      <h1>EECS448 Lab03 &mdash; Ian Hierl</h1>
     </header>
     
     <nav>
+      <ul class="navlinks">
+        <li><a href="index.html">Index Page</a></li>
+        <li><a href="validate.html">Exercise 1: Password Validation</a></li>
+        <li><a href="slideshow.html">Exercise 2: Image Slideshow</a></li>
+        <li><a href="profile.html">Exercise 3: Profile Page</a></li>
+        <li><a href="cssmanip.html">Exercise 4: CSS Manipulation</a></li>
+      </ul>
     </nav>
     
     <main>
@@ -37,7 +48,7 @@
         Nam egestas sed mauris et pellentesque.
       </p>
 
-      <form target="blank">
+      <form>
         <fieldset>
           <legend>Border Controls:&nbsp;</legend>
           <label for="borderRed">
@@ -45,7 +56,8 @@
           </label>
           <input type="text"
                  id="borderRed"
-                 name="borderRed">
+                 name="borderRed"
+                 value=0>
           <br>
 
           <label for="borderGreen">
@@ -53,7 +65,8 @@
           </label>
           <input type="text"
                  id="borderGreen"
-                 name="borderGreen">
+                 name="borderGreen"
+                 value=0>
           <br>
 
           <label for="borderBlue">
@@ -61,7 +74,8 @@
           </label>
           <input type="text"
                  id="borderBlue"
-                 name="borderBlue">
+                 name="borderBlue"
+                 value=0>
           <br>
 
           <label for="borderWidth">
@@ -69,7 +83,8 @@
           </label>
           <input type="text"
                  id="borderWidth"
-                 name="borderWidth">
+                 name="borderWidth"
+                 value=2>
         </fieldset>
 
         <fieldset>
@@ -79,15 +94,17 @@
           </label>
           <input type="text"
                  id="bgRed"
-                 name="bgRed">
+                 name="bgRed"
+                 value=255>
           <br>
 
           <label for="bgGreen">
             Green value (0-255):&nbsp;
-          <label>
+          </label>
           <input type="text"
                  id="bgGreen"
-                 name="bgGreen">
+                 name="bgGreen"
+                 value=255>
           <br>
 
           <label for="bgBlue">
@@ -95,15 +112,18 @@
           </label>
           <input type="text"
                  id="bgBlue"
-                 name="bgBlue">
+                 name="bgBlue"
+                 value=255>
         </fieldset>
         <input type="button"
                id="updateBttn"
+               class="right"
                value="Update Style">
       </form>
     </main>
     
     <footer>
+      Page by Ian Hierl for KU EECS448, Spring 2019.
     </footer>
   </body>
 </html>

@@ -1,0 +1,111 @@
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-image: linear-gradient(to bottom, slateblue, lightblue);
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 700px;
+  margin: auto;
+  padding: 0;
+  color: black;
+  border-radius: 5em 5em 0 0;
+  background-image: linear-gradient(to bottom, lightblue, rgba(255, 255, 255, 0.5));
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+}
+
+nav ul.navlinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+}
+
+nav ul li {
+  flex-grow: 0;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-style: solid;
+  border-width: 0 0.5em 0 0.5em;
+  border-radius: 1em 1em 1em 1em / 50% 50% 50% 50%;
+  background-image: linear-gradient(to bottom, lightblue, rgba(255, 255, 255, 0.5));
+}
+
+a {
+  color: slateblue;
+  text-decoration: none;
+}
+
+main {
+  width: 700px;
+  margin: auto;
+  padding: 1em 5em 5em 5em;
+  border-style: solid;
+  border-width: 0.5em;
+  border-radius: 5em 0 5em 0;
+  background-color: lightblue;
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+figure#profilepic {
+  width: 300px;
+  min-height: 400px;
+}
+
+p {
+  text-align: 2em;
+}
+
+form label {
+  display: inline-block;
+  width: 18em;
+  text-align: right;
+}
+
+form input {
+  display: inline-block;
+  text-align: left;
+}
+
+footer {
+  width: 700px;
+  height: 2em;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 0.5em 0;
+  clear: both;
+}
+
+p {
+  text-indent: 2em;
+}
+
+p#target {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 0.5em;
+}
